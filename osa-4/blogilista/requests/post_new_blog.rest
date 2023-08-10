@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlcGEiLCJpZCI6IjY0ZDNiNzI1MDZhZGViNGIyODA0OTI3ZCIsImlhdCI6MTY5MTYyODc4NiwiZXhwIjoxNjkxNjI5Njg2fQ.KSEsCkIifjckN8Kq04tBaVa1xXNSPeIKijP7Bj69fGg
+
+{
+    "title": "Toyotan takapenkillä",
+    "author": "Kimmo",
+    "url": "https://pilipali.io/",
+    "likes": 3
+}
