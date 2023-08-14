@@ -54,11 +54,7 @@ blogsRouter.put('/:id', middleware.userExtractor, async (request, response) => {
     if (blog === null) {
         return response.status(404).json({ error: 'bad id' })
     }
-
-    if (blog.user.toString() !== request.user.id.toString()) {
-        return response.status(401).json({ error: 'trying to modify another user\'s blog' })
-    }
-
+    
     const putBlog = {
         title: request.body.title,
         author: request.body.author,
